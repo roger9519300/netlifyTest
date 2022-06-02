@@ -1,0 +1,16 @@
+﻿
+body {
+    width: 99%;
+    max-width: 250px;
+    text-align: center;
+}
+
+#WeChat_Detail {
+}
+
+    #WeChat_Detail .WeChatInfo {
+        margin: 15px auto;
+        font-size: 16px;
+        font-weight: bold;
+        color: #888;
+    }

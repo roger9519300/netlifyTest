@@ -1,0 +1,21 @@
+原本智邦DNS
+智邦 hosting.url.com.tw/
+帳號:chto628@gmail.com
+密碼:a0929037237
+
+轉亞太DNS
+亞太 http://rs.aptg.com.tw/index.php
+帳號:chto628@gmail.com 
+密碼:Aa0929037237  
+
+
+
+前台首頁網址
+www.gototaiwan.com.tw
+後台管理介面網址
+admin.gototaiwan.com.tw
+帳號:admin
+密碼:12345
+
+
+

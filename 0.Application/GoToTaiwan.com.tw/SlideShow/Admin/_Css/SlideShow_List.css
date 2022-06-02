@@ -1,0 +1,18 @@
+﻿
+#SlideShow_List .Table1 {
+    width: 100%;
+}
+
+    #SlideShow_List .Table1 .Link {
+        word-break: break-all;
+        text-decoration: underline;
+        color: blue;
+    }
+
+    #SlideShow_List .Table1 .Image {
+        display: inline-block;
+        text-align: center;
+        width: 560px;
+        height: 150px;
+        overflow: auto;
+    }

@@ -1,0 +1,22 @@
+﻿body {
+    width: 500px;
+}
+
+#Menu_Modify {
+}
+
+    #Menu_Modify .Table2 {
+        width: 100%;
+    }
+
+        #Menu_Modify .Table2 img {
+            width: 100%;
+        }
+
+    #Menu_Modify .Button2.Red {
+        float: left;
+    }
+
+    #Menu_Modify .Button2.Blue {
+        float: right;
+    }

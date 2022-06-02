@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/_MasterPage/Base.master" AutoEventWireup="true" CodeFile="Base_Popup.master.cs" Inherits="_MasterPage_Base_Popup" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <link href="/_MasterPage/_Css/Base_Popup.css" rel="stylesheet" />
+        <script type="text/javascript">
+        $(document).ready(function () {
+            Render.Initial_SelectBoxList();
+            Event.Click_CheckBoxList();
+            Event.Click_RadioBoxList();
+        });
+
+        var Render = {
+            Initial_SelectBoxList: function () {
+                $(".js-SelectBoxList input").each(function () {
+                    if ($(this).attr("checked") === "checked") {
+                        $(this).next().addClass("Selected");
+                    }
+                });
+            }
+        };
+
+        var Event = {
+            Click_CheckBoxList: function () {
+                $(".js-SelectBoxList.Check label").click(function () {
+                    if ($(this).hasClass("Selected") === true) {
+                        $(this).removeClass("Selected");
+                    }
+                    else {
+                        $(this).addClass("Selected");
+                    }
+                });
+            },
+
+            Click_RadioBoxList: function () {
+                $(".js-SelectBoxList.Radio label").click(function () {
+                    $(this).siblings().removeClass("Selected");
+                    $(this).addClass("Selected");
+                });
+            }
+        };
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div id="Base_Popup">
+        <asp:ContentPlaceHolder ID="Content" runat="server">
+        </asp:ContentPlaceHolder>
+        <div style="clear: both; height: 1px;"></div>
+    </div>
+</asp:Content>
